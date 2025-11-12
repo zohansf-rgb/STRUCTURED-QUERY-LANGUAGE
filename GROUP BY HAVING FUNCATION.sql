@@ -1,3 +1,33 @@
+create database companyy;
+use companyy;
+CREATE TABLE SALES_DATA (
+    sale_id INT PRIMARY KEY,
+    product VARCHAR(50),
+    category VARCHAR(50),
+    quantity INT,
+    price INT,
+    region VARCHAR(50),
+    salesperson VARCHAR(50),
+    sale_date DATE
+);
+
+INSERT INTO sales (sale_id, product, category, quantity, price, region, salesperson, sale_date) VALUES
+(1, 'Laptop', 'Electronics', 5, 50000, 'East', 'John', '05-01-2024'),
+(2, 'Mobile', 'Electronics', 10, 20000, 'West', 'Mary', '10-01-2024'),
+(3, 'Chair', 'Furniture', 20, 1500, 'East', 'John', '15-02-2024'),
+(4, 'Table', 'Furniture', 8, 5000, 'North', 'Steve','18-02-2024'),
+(5, 'Laptop', 'Electronics', 7, 55000, 'South', 'Mary', '01-03-2024'),
+(6, 'Mobile', 'Electronics', 15, 18000, 'East', 'John', '05-03-2024'),
+(7, 'Sofa', 'Furniture', 3, 25000, 'West', 'Steve','20-03-2024'),
+(8, 'Laptop', 'Electronics', 2, 52000, 'North', 'Mary','02-04-2024'),
+(9, 'Chair', 'Furniture', 30, 1200, 'South', 'John', '12-04-2024'),
+(10, 'Mobile', 'Electronics', 12, 22000, 'West', 'Steve', '15-04-2024');
+
+
+
+
+
+
 SELECT * FROM groupbyhaving.sales_data;
 
 # 1. Find total sales amount for each region.
