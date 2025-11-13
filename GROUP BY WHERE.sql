@@ -1,5 +1,23 @@
+create database AAFT;
+use AAFT;
+CREATE TABLE zohan_work5 (
+    EMP_ID INT PRIMARY KEY,
+    FIRST_NAME VARCHAR(50),
+    LAST_NAME VARCHAR(50),
+    DEPARTMENT VARCHAR(50),
+    SALARY INT,
+    HIRE_DATE DATE
+);
+
+INSERT INTO zohan_work5 (EMP_ID, FIRST_NAME, LAST_NAME, DEPARTMENT, SALARY, HIRE_DATE) VALUES
+(1, 'JOHN', 'DOE', 'IT', 60000, '2019-01-10'),
+(2, 'JANE', 'SMITH', 'HR', 55000, '2018-03-05'),
+(3, 'EMILY', 'JONES', 'IT', 62000, '2020-07-23'),
+(4, 'MICHAEL', 'BROWN', 'FINANCE', 70000, '2016-05-14'),
+(5, 'SARAH', 'DAVIS', 'FINANCE', 69000, '2017-11-18'),
+(6, 'DAVID', 'JOHNSON', 'HR', 48000, '2021-09-10');
+
 SELECT * FROM aaft.`zohan work 5`;
-use aaft;
 -- 1. Find the average salary of employees in each department. 
 SELECT department, AVG(salary) AS average_salary
 FROM zohan_work5
